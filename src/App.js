@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Message from "./components/Message";
 
 const messages = [
     "Learn React ⚛️",
@@ -25,7 +26,7 @@ export default function App() {
                 <div className={step === 3 && 'active'}>3</div>
             </div>
 
-            <p className="message">Hello</p>
+            <Message step={step}/>
 
             <div className="buttons">
                 <button style={{backgroundColor: "#7950f2", color: "#fff"}} onClick={previousHandler}>
